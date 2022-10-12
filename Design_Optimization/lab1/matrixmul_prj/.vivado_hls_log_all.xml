@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] Synthesizability check failed.&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Xilinx/Vitis_HLS/2020.1/Design_Optimization/lab1/matrixmul_prj/solution4_FIFO_int/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Xilinx/Vitis_HLS/2020.1/Design_Optimization/lab1/matrixmul_prj/solution4_FIFO_int/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="matrixmul_prj" solutionName="solution4_FIFO_int" date="2022-10-11T20:21:36.404+0800"/>
+        <logs message="ERROR: [SYNCHK 200-91] as it has both write (matrixmul.cpp:60:13) and read (matrixmul.cpp:60:13) operations." projectName="matrixmul_prj" solutionName="solution4_FIFO_int" date="2022-10-11T20:21:36.136+0800"/>
+        <logs message="ERROR: [SYNCHK 200-91] Port 'res' (matrixmul.cpp:48) of function 'matrixmul' cannot be set to a FIFO " projectName="matrixmul_prj" solutionName="solution4_FIFO_int" date="2022-10-11T20:21:36.119+0800"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'matrixmul' (Loop: Product): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('res_addr_write_ln60', matrixmul.cpp:60) of variable 'add_ln60', matrixmul.cpp:60 on array 'res' and 'load' operation ('res_load', matrixmul.cpp:60) on array 'res'." projectName="matrixmul_prj" solutionName="solution15_product_pipe" date="2022-10-11T22:01:22.099+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Col' (matrixmul.cpp:56:40) in function 'matrixmul' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop." projectName="matrixmul_prj" solutionName="solution15_product_pipe" date="2022-10-11T22:01:21.919+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="matrixmul_prj" solutionName="solution15_product_pipe" date="2022-10-11T22:01:13.916+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="matrixmul_prj" solutionName="solution15_product_pipe" date="2022-10-11T22:01:13.859+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('res_addr_4_write_ln60', matrixmul.cpp:60) of variable 'add_ln60_9', matrixmul.cpp:60 on array 'res' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'res'." projectName="matrixmul_prj" solutionName="solution5_pipeline_func" date="2022-10-11T20:36:01.056+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('b_load_2', matrixmul.cpp:60) on array 'b' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'b'." projectName="matrixmul_prj" solutionName="solution5_pipeline_func" date="2022-10-11T20:36:01.010+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="matrixmul_prj" solutionName="solution5_pipeline_func" date="2022-10-11T20:35:52.841+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="matrixmul_prj" solutionName="solution5_pipeline_func" date="2022-10-11T20:35:52.793+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="matrixmul_prj" solutionName="solution4_FIFO_int" date="2022-10-11T20:21:28.459+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="matrixmul_prj" solutionName="solution4_FIFO_int" date="2022-10-11T20:21:28.388+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="matrixmul_prj" solutionName="solution3_reshape_array" date="2022-10-11T20:16:42.992+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="matrixmul_prj" solutionName="solution3_reshape_array" date="2022-10-11T20:16:42.939+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a_load_1', matrixmul.cpp:60) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'." projectName="matrixmul_prj" solutionName="solution2" date="2022-10-11T20:07:24.359+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="matrixmul_prj" solutionName="solution2" date="2022-10-11T20:07:16.223+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="matrixmul_prj" solutionName="solution2" date="2022-10-11T20:07:16.164+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="matrixmul_prj" solutionName="solution1" date="2022-10-11T19:53:35.536+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="matrixmul_prj" solutionName="solution1" date="2022-10-11T19:53:35.493+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
